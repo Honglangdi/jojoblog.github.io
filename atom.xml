@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>jojoBlog</title>
+  
+  <subtitle>前路或许崎岖坎坷，但回首之时也会倍感自豪。</subtitle>
+  <link href="https://honglangdi.github.io/jojoblog.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://honglangdi.github.io/jojoblog.github.io/"/>
+  <updated>2023-02-12T09:14:59.997Z</updated>
+  <id>https://honglangdi.github.io/jojoblog.github.io/</id>
+  
+  <author>
+    <name>jojo Hong</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java面试题(208道)</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/</id>
+    <published>2023-02-12T09:05:34.000Z</published>
+    <updated>2023-02-12T09:14:59.997Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java面试题（208道）&quot;&gt;&lt;a href=&quot;#Java面试题（208道）&quot; class=&quot;headerlink&quot; title=&quot;Java面试题（208道）&quot;&gt;&lt;/a&gt;Java面试题（208道）&lt;/h1&gt;&lt;h2 id=&quot;一、概述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Java/"/>
+    
+    <category term="面试题" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Java/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+    <category term="Java" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Java/"/>
+    
+    <category term="面试题" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="Java面试题" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java设计模式</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2023/02/11/java-she-ji-mo-shi/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2023/02/11/java-she-ji-mo-shi/</id>
+    <published>2023-02-11T10:25:26.000Z</published>
+    <updated>2023-02-11T10:45:03.612Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java常用的设计模式&quot;&gt;&lt;a href=&quot;#Java常用的设计模式&quot; class=&quot;headerlink&quot; title=&quot;Java常用的设计模式&quot;&gt;&lt;/a&gt;Java常用的设计模式&lt;/h1&gt;&lt;h2 id=&quot;二、七种常用的设计模式&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Java/"/>
+    
+    <category term="设计模式" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Java/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="Java" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Java/"/>
+    
+    <category term="设计模式" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="Java工厂模式" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Java%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="懒汉式" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/%E6%87%92%E6%B1%89%E5%BC%8F/"/>
+    
+    <category term="饿汉式" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/%E9%A5%BF%E6%B1%89%E5%BC%8F/"/>
+    
+    <category term="抽象工厂" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82/"/>
+    
+    <category term="工厂模式" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis轻松入门</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2022/08/24/redis-qing-song-ru-men/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2022/08/24/redis-qing-song-ru-men/</id>
+    <published>2022-08-24T14:57:58.000Z</published>
+    <updated>2022-08-24T15:12:00.712Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Redis&quot;&gt;&lt;a href=&quot;#Redis&quot; class=&quot;headerlink&quot; title=&quot;Redis&quot;&gt;&lt;/a&gt;Redis&lt;/h1&gt;&lt;p&gt;Redis:REmote DIctionary Server（远程字典服务器）&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Redis/"/>
+    
+    
+    <category term="Redis" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Redis/"/>
+    
+    <category term="Redis配置" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Redis%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="Redis哨兵模式" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Redis%E5%93%A8%E5%85%B5%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="Redis主从复制" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Redis%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MyBatis事务与数据源</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2022/08/23/mybatis-shi-wu-yu-shu-ju-yuan/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2022/08/23/mybatis-shi-wu-yu-shu-ju-yuan/</id>
+    <published>2022-08-23T14:27:58.000Z</published>
+    <updated>2022-08-23T14:36:29.059Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;transactionManager&quot;&gt;&lt;a href=&quot;#transactionManager&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="MyBatis" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/MyBatis/"/>
+    
+    
+    <category term="MyBatis" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/MyBatis/"/>
+    
+    <category term="MyBatis事务" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/MyBatis%E4%BA%8B%E5%8A%A1/"/>
+    
+    <category term="MyBatis数据源" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/MyBatis%E6%95%B0%E6%8D%AE%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaIO流</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2022/08/23/javaio-liu/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2022/08/23/javaio-liu/</id>
+    <published>2022-08-23T14:24:35.000Z</published>
+    <updated>2022-08-23T14:41:48.472Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、IO流&quot;&gt;&lt;a href=&quot;#一、IO流&quot; class=&quot;headerlink&quot; title=&quot;一、IO流&quot;&gt;&lt;/a&gt;一、IO流&lt;/h1&gt;&lt;h2 id=&quot;IO流的概述和分类&quot;&gt;&lt;a href=&quot;#IO流的概述和分类&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Java/"/>
+    
+    <category term="IO流" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/IO%E6%B5%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL索引</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2022/08/23/mysql-suo-yin/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2022/08/23/mysql-suo-yin/</id>
+    <published>2022-08-23T07:55:04.000Z</published>
+    <updated>2023-02-11T10:29:51.531Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL索引&quot;&gt;&lt;a href=&quot;#MySQL索引&quot; class=&quot;headerlink&quot; title=&quot;MySQL索引&quot;&gt;&lt;/a&gt;MySQL索引&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;一、数据库性能下降的问题&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/MySQL/"/>
+    
+    
+    <category term="MySQLIndex" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/MySQLIndex/"/>
+    
+    <category term="MySQLGrammar" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/MySQLGrammar/"/>
+    
+    <category term="MySQL" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git的简单上手</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2022/08/23/git-de-jian-dan-shang-shou/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2022/08/23/git-de-jian-dan-shang-shou/</id>
+    <published>2022-08-23T07:13:42.000Z</published>
+    <updated>2022-08-23T07:24:41.989Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Git的使用&quot;&gt;&lt;a href=&quot;#Git的使用&quot; class=&quot;headerlink&quot; title=&quot;Git的使用&quot;&gt;&lt;/a&gt;Git的使用&lt;/h1&gt;&lt;h3 id=&quot;Git配置&quot;&gt;&lt;a href=&quot;#Git配置&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Git/"/>
+    
+    <category term="GitQuick" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/GitQuick/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MarkDown语法</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2022/08/22/markdown-yu-fa/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2022/08/22/markdown-yu-fa/</id>
+    <published>2022-08-22T15:13:18.000Z</published>
+    <updated>2022-08-23T01:27:28.630Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Markdowm&quot;&gt;&lt;a href=&quot;#Markdowm&quot; class=&quot;headerlink&quot; title=&quot;Markdowm&quot;&gt;&lt;/a&gt;Markdowm&lt;/h1&gt;&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Markdown/"/>
+    
+    <category term="MDGrammar" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Markdown/MDGrammar/"/>
+    
+    
+    <category term="Markdown" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Markdown/"/>
+    
+    <category term="MDGrammar" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/MDGrammar/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>All Hello World</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2022/08/22/all-hello-world/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2022/08/22/all-hello-world/</id>
+    <published>2022-08-22T10:28:36.000Z</published>
+    <updated>2022-08-23T01:26:58.312Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Java-Quick-Start-Test&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="HelloWorld" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/HelloWorld/"/>
+    
+    
+    <category term="HelloWorld" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/HelloWorld/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2022/07/08/hello-world/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2022/07/08/hello-world/</id>
+    <published>2022-07-08T09:41:51.138Z</published>
+    <updated>2022-08-23T01:25:23.001Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
