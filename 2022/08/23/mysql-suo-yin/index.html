@@ -527,16 +527,16 @@ SQL慢
 <li><p>服务器调优以及各个参数设置（缓冲、线程数等）**[不重要，由专门DBA负责]**</p>
 </li>
 </ol>
-<h2 id="二、常见的Join查询"><a href="#二、常见的Join查询" class="headerlink" title="二、常见的Join查询"></a>二、常见的Join查询</h2><h3 id="SQL执行顺序"><a href="#SQL执行顺序" class="headerlink" title="SQL执行顺序"></a>SQL执行顺序</h3><h4 id="手写"><a href="#手写" class="headerlink" title="手写"></a>手写</h4><img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E5%9B%BE.jpg" class>
+<h2 id="二、常见的Join查询"><a href="#二、常见的Join查询" class="headerlink" title="二、常见的Join查询"></a>二、常见的Join查询</h2><h3 id="SQL执行顺序"><a href="#SQL执行顺序" class="headerlink" title="SQL执行顺序"></a>SQL执行顺序</h3><h4 id="手写"><a href="#手写" class="headerlink" title="手写"></a>手写</h4><img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E5%9B%BE.jpg" class="">
 
 
 
 <h4 id="机读"><a href="#机读" class="headerlink" title="机读"></a>机读</h4><p><span style="color:red;font-size:20px;">注意：</span>  不同版本的SQL的执行顺序会有所不同</p>
-<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/SQL%E6%9C%BA%E8%AF%BB%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E5%9B%BE.jpg" class>
+<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/SQL%E6%9C%BA%E8%AF%BB%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E5%9B%BE.jpg" class="">
 
 
 
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/SQL%E8%A7%A3%E6%9E%90%E5%9B%BE.jpg" class>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/SQL%E8%A7%A3%E6%9E%90%E5%9B%BE.jpg" class="">
 
 
 
@@ -640,7 +640,7 @@ SELECT * FROM t_emp A RIGHT JOIN t_dept B ON A.deptId = B.id WHERE A.`deptId` IS
 <p>可以得到索引的本质：<span style="color:red;">索引 是数据结构</span></p>
 <p>索引的目的在于提高查询效率</p>
 <h3 id="排好序的快速查找数据结构"><a href="#排好序的快速查找数据结构" class="headerlink" title="排好序的快速查找数据结构"></a><span style="color:red;">排好序的快速查找数据结构</span></h3><h4 id="详解（重要）"><a href="#详解（重要）" class="headerlink" title="详解（重要）"></a>详解（重要）</h4><p> 在数据之外，数据库系统还维护着满足特定查找算法的数据结构，这些数据结构以某种方式引用（指向）数据，<br>这样就可以在这些数据结构上实现高级查找算法。这种数据结构，就是索引。下图就是一种可能的索引方式示例：</p>
-<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E7%9A%84%E7%B4%A2%E5%BC%95%E6%96%B9%E5%BC%8F%E7%A4%BA%E4%BE%8B%E5%9B%BE.jpg" class>
+<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E7%9A%84%E7%B4%A2%E5%BC%95%E6%96%B9%E5%BC%8F%E7%A4%BA%E4%BE%8B%E5%9B%BE.jpg" class="">
 
 <p>左边是数据表，一共有两列七条记录，最左边的是数据记录的物理地址<br> 为了加快Col2的查找，可以维护一个右边所示的二叉查找树，每个节点分别包含索引键值和一个指向对应数据记录物理地址的指针，这样就可以运用二叉查找在一定的复杂度内获取到相应数据，从而快速的检索出符合条件的记录。<br>二叉树弊端之一：二叉树很可能会发生两边不平衡的情况。<br>B-TREE: (B:balance)  会自动根据两边的情况自动调节，使两端无限趋近于平衡状态。可以使性能最稳定。(myisam使用的方式)<br>    B-TREE弊端：(<strong>插入/修改</strong>操作多时，B-TREE会不断调整平衡，消耗性能)从侧面说明了索引不是越多越好。<br><span style="color:red;"><strong>B+TREE:Innodb 所使用的索引</strong> </span> </p>
 <h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><p style="font-size:18px;color:purple">数据本身之外，数据库还维护着一个满足特定查找算法的数据结构，这些数据结构以某种方式指向数据，这样就可以在这些数据结构的基础上实现高级查找算法，这种数据结构就是索引。</p>
@@ -668,13 +668,13 @@ SELECT * FROM t_emp A RIGHT JOIN t_dept B ON A.deptId = B.id WHERE A.`deptId` IS
 <p>【初始化介绍】<br>一颗b树，浅蓝色的块我们称之为一个磁盘块，可以看到每个磁盘块包含几个<strong>数据项</strong>（深蓝色所示）和<strong>指针</strong>（黄色所示），<br>如磁盘块1包含数据项17和35，包含指针P1、P2、P3，<br>P1表示小于17的磁盘块，P2表示在17和35之间的磁盘块，P3表示大于35的磁盘块。<br><span style="color:red;"><strong>真实的数据存在于叶子节点</strong> </span> 真实的数据存在于叶子节点即3、5、9、10、13、15、28、29、36、60、75、79、90、99。<br><span style="color:red;">非叶子节点不存储真实的数据，只存储指引搜索方向的数据项 </span> ，如17、35并不真实存在于数据表中。</p>
 <p>【查找过程】<br>如果要查找数据项29，那么首先会把磁盘块1由磁盘加载到内存，此时发生一次IO，在内存中用二分查找确定29在17和35之间，锁定磁盘块1的P2指针，内存时间因为非常短（相比磁盘的IO）可以忽略不计，通过磁盘块1的P2指针的磁盘地址把磁盘块3由磁盘加载到内存，发生第二次IO，29在26和30之间，锁定磁盘块3的P2指针，通过指针加载磁盘块8到内存，发生第三次IO，同时内存中做二分查找找到29，结束查询，总计三次IO。</p>
 <h4 id="关于时间复杂度"><a href="#关于时间复杂度" class="headerlink" title="关于时间复杂度"></a>关于时间复杂度</h4><p>同一问题可用不同算法解决，而一个算法的质量优劣将影响到算法乃至程序的效率。算法分析的目的在于选择合适算法和改进算法。</p>
-<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E4%B8%8D%E5%90%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8D%E5%90%8C%E6%93%8D%E4%BD%9C%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%9B%BE.jpg" class>
+<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E4%B8%8D%E5%90%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8D%E5%90%8C%E6%93%8D%E4%BD%9C%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%9B%BE.jpg" class="">
 
-<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E4%B8%8D%E5%90%8C%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%8F%98%E5%8C%96%E8%B6%8B%E5%8A%BF%E5%9B%BE.jpg" class>
+<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E4%B8%8D%E5%90%8C%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%8F%98%E5%8C%96%E8%B6%8B%E5%8A%BF%E5%9B%BE.jpg" class="">
 
 <p>1  N  logN 分别表示数据与查询次数之间的关系。<br>常数  1<em>c 表示查询最快的方式。查询次数不随数据的增加而增加<br>变量 N 表示查询次数随数据数量的增加而增加<br>对数 logN 表示查询次数与数据数量成对数关系。 介于常数与 N 之间。<br>n</em>logN 表示使用的复合方法。</p>
 <h3 id="B-Tree索引"><a href="#B-Tree索引" class="headerlink" title="B+Tree索引"></a>B+Tree索引</h3><p><span style="color:red;font-size:20px;"><strong>B+Tree索引——innodb的普通索引</strong></span>  </p>
-<h4 id="原理图-1"><a href="#原理图-1" class="headerlink" title="原理图"></a>原理图</h4><img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/B+Tree%E5%8E%9F%E7%90%86%E5%9B%BE.jpg" class>
+<h4 id="原理图-1"><a href="#原理图-1" class="headerlink" title="原理图"></a>原理图</h4><img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/B+Tree%E5%8E%9F%E7%90%86%E5%9B%BE.jpg" class="">
 
 <p>B+TREE 第二级的 数据并不能直接取出来，只作索引使用。在内存有限的情况下，查询效率高于 B-TREE<br>B-TREE 第二级可以直接取出来，树形结构比较重，在内存无限大的时候有优势。</p>
 <h4 id="B树和B-树的区别"><a href="#B树和B-树的区别" class="headerlink" title="B树和B+树的区别"></a>B树和B+树的区别</h4><p>B+Tree与B-Tree 的区别：结论在内存有限的情况下，B+TREE 永远比 B-TREE好。无限内存则后者方便</p>
@@ -685,7 +685,7 @@ SELECT * FROM t_emp A RIGHT JOIN t_dept B ON A.deptId = B.id WHERE A.`deptId` IS
 </ol>
 <h3 id="聚簇索引与非聚簇索引"><a href="#聚簇索引与非聚簇索引" class="headerlink" title="聚簇索引与非聚簇索引"></a>聚簇索引与非聚簇索引</h3><p>聚簇索引并不是一种单独的索引类型，而是一种<strong>数据存储方式</strong>。<br>术语‘聚簇’表示<strong>数据行和相邻的键值进错的存储在一起</strong>。</p>
 <p>如下图，左侧的索引就是聚簇索引，因为数据行在磁盘的排列和索引排序保持一致。</p>
-<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95%E4%B8%8E%E9%9D%9E%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95%E5%9B%BE.jpg" class>
+<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95%E4%B8%8E%E9%9D%9E%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95%E5%9B%BE.jpg" class="">
 
 
 
@@ -793,7 +793,7 @@ DROP INDEX idx_no_name  on customer ;
 <h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><p><span style="color:red;font-size:20px;font-weight:bold;">&nbsp;DROP INDEX&nbsp;[indexName] ON mytable;&nbsp;</span>  </p>
 <h4 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h4><p><span style="color:red;font-size:20px;font-weight:bold;">&nbsp;SHOW INDEX FROM table_naem\G&nbsp;</span>  </p>
 <p><strong>结果图：</strong></p>
-<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E6%9F%A5%E7%9C%8B%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%9C%E5%9B%BE.jpg" class>
+<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E6%9F%A5%E7%9C%8B%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%9C%E5%9B%BE.jpg" class="">
 
 
 
@@ -837,7 +837,7 @@ ALTER TABLE tbl_name ADD FULLTEXT index_name (column_list);
 <li><p>Where条件里用不到的字段不创建索引，因为索引建多了影响 <strong>增删改 的效率</strong></p>
 </li>
 <li><p>数据重复且且分布均匀的表字段，因此应该只为最经常排序的数据建立索引。<span style="color:red;">注意，&nbsp;</span>如果某个数据列包含许多重复的内容，为它建立索引就没有太大的实际效果。</p>
-<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E6%9F%90%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%88%97%E5%8C%85%E5%90%AB%E5%A4%A7%E9%87%8F%E9%87%8D%E5%A4%8D%E5%86%85%E5%AE%B9%E7%B4%A2%E5%BC%95%E6%95%88%E6%9E%9C%E5%9B%BE.jpg" class></li>
+<img src="/jojoblog.github.io/2022/08/23/mysql-suo-yin/%E6%9F%90%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%88%97%E5%8C%85%E5%90%AB%E5%A4%A7%E9%87%8F%E9%87%8D%E5%A4%8D%E5%86%85%E5%AE%B9%E7%B4%A2%E5%BC%95%E6%95%88%E6%9E%9C%E5%9B%BE.jpg" class=""></li>
 </ol>
 
                 
