@@ -6,7 +6,7 @@
   <link href="https://honglangdi.github.io/jojoblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://honglangdi.github.io/jojoblog.github.io/"/>
-  <updated>2023-02-13T13:47:25.629Z</updated>
+  <updated>2023-02-23T12:54:52.184Z</updated>
   <id>https://honglangdi.github.io/jojoblog.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 gitee 和 Hexo 搭建自己的独立博客</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2023/02/23/shi-yong-gitee-he-hexo-da-jian-zi-ji-de-du-li-bo-ke/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2023/02/23/shi-yong-gitee-he-hexo-da-jian-zi-ji-de-du-li-bo-ke/</id>
+    <published>2023-02-23T12:42:01.000Z</published>
+    <updated>2023-02-23T12:54:52.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用-gitee-和-Hexo-搭建自己的独立博客！&quot;&gt;&lt;a href=&quot;#使用-gitee-和-Hexo-搭建自己的独立博客！&quot; class=&quot;headerlink&quot; title=&quot;使用 gitee 和 Hexo 搭建自己的独立博客！&quot;&gt;&lt;/a&gt;使用</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Hexo/"/>
+    
+    <category term="博客" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Hexo/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Hexo" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Hexo/"/>
+    
+    <category term="博客" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>Java面试题(208道)</title>
