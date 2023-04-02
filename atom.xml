@@ -6,7 +6,7 @@
   <link href="https://honglangdi.github.io/jojoblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://honglangdi.github.io/jojoblog.github.io/"/>
-  <updated>2023-02-23T13:06:36.565Z</updated>
+  <updated>2023-04-02T14:34:07.604Z</updated>
   <id>https://honglangdi.github.io/jojoblog.github.io/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue2使用vxe-table的教程</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2023/04/02/vue2-shi-yong-vxe-table-de-jiao-cheng/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2023/04/02/vue2-shi-yong-vxe-table-de-jiao-cheng/</id>
+    <published>2023-04-02T14:00:59.000Z</published>
+    <updated>2023-04-02T14:34:07.604Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;使用指南&quot;&gt;&lt;a href=&quot;#使用指南&quot; class=&quot;headerlink&quot; title=&quot;使用指南&quot;&gt;&lt;/a&gt;使用指南&lt;/h2&gt;&lt;h3 id=&quot;全局安装&quot;&gt;&lt;a href=&quot;#全局安装&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Vue.js" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Vue-js/"/>
+    
+    <category term="Vue2" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Vue-js/Vue2/"/>
+    
+    <category term="Vue扩展使用教程" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Vue-js/Vue2/Vue%E6%89%A9%E5%B1%95%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="vxe-table" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Vue-js/Vue2/Vue%E6%89%A9%E5%B1%95%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/vxe-table/"/>
+    
+    <category term="vxe-table使用教程" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Vue-js/Vue2/Vue%E6%89%A9%E5%B1%95%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/vxe-table/vxe-table%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Vue.js" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Vue-js/"/>
+    
+    <category term="Vue2" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Vue2/"/>
+    
+    <category term="Vue扩展使用教程" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Vue%E6%89%A9%E5%B1%95%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="vxe-table" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/vxe-table/"/>
+    
+    <category term="vxe-table使用教程" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/vxe-table%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 gitee 和 Hexo 搭建自己的独立博客</title>
