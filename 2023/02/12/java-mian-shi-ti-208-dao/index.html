@@ -493,7 +493,7 @@
             <div id="articleContent">
                 <h1 id="Java面试题（208道）"><a href="#Java面试题（208道）" class="headerlink" title="Java面试题（208道）"></a>Java面试题（208道）</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>本文分为十九个模块，分别是：「<span style="color:red;"><strong>Java 基础、容器、多线程、反射、对象拷贝、Java Web 、异常、网络、设计模式、Spring/Spring MVC、Spring Boot/Spring Cloud、Hibernate、MyBatis、RabbitMQ、Kafka、Zookeeper、MySQL、Redis、JVM</strong></span>」 ，如下图所示：</p>
 <p><strong>模块图：</strong></p>
-<img src="/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/%E6%A8%A1%E5%9D%97%E5%9B%BE.png" class="">
+<img src="/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/%E6%A8%A1%E5%9D%97%E5%9B%BE.png" class>
 
 
 
@@ -603,7 +603,7 @@ false
 <h4 id="7-String、StringBuffer、StringBuilder。"><a href="#7-String、StringBuffer、StringBuilder。" class="headerlink" title="7. String、StringBuffer、StringBuilder。"></a><strong>7. String、StringBuffer、StringBuilder。</strong></h4><h5 id="7-1-Java-中操作字符串都有哪些类？"><a href="#7-1-Java-中操作字符串都有哪些类？" class="headerlink" title="7.1 Java 中操作字符串都有哪些类？"></a>7.1 Java 中操作字符串都有哪些类？</h5><p>操作字符串的类有：<span style="color:red;"><strong>String、StringBuffer、StringBuilder</strong></span>。</p>
 <h5 id="7-2-它们之间有什么区别？"><a href="#7-2-它们之间有什么区别？" class="headerlink" title="7.2 它们之间有什么区别？"></a>7.2 它们之间有什么区别？</h5><p><strong>String</strong> 和 <strong>StringBuffer</strong>、<strong>StringBuilder</strong> 的区别在于 <strong>String</strong> 声明的是不可变的对象，每次操作都会生成新的 <strong>String 对象</strong>，然后将<strong>指针</strong>指向新的 <strong>String 对象</strong>，而 <strong>StringBuffer</strong>、<strong>StringBuilder</strong> 可以在原有对象的基础上进行操作，所以<span style="color:red;">在经常改变字符串内容的情况下最好不要使用 String</span>。</p>
 <p><strong>StringBuffer</strong> 和 <strong>StringBuilder</strong> 最大的区别在于，<strong>StringBuffer</strong> 是<span style="color:red;">线程安全的</span>，而 <strong>StringBuilder</strong> 是<span style="color:red;">非线程安全的</span>，但 <strong>StringBuilder</strong> 的性能却高于 <strong>StringBuffer</strong>，所以<span style="color:red;">在单线程环境下推荐使用 <strong>StringBuilde</strong>r，多线程环境下推荐使用 <strong>StringBuffer</strong></span>。</p>
-<h4 id="8-String-str-x3D-”i”与-String-str-x3D-new-String-“i”-一样吗？"><a href="#8-String-str-x3D-”i”与-String-str-x3D-new-String-“i”-一样吗？" class="headerlink" title="8. String str=”i”与 String str=new String(“i”)一样吗？"></a><strong>8. String str=”i”与 String str=new String(“i”)一样吗？</strong></h4><p>不一样，因为内存的分配方式不一样。String str=”i”的方式，Java 虚拟机会将其分配到常量池中；而 String str=new String(“i”) 则会被分到堆内存中。</p>
+<h4 id="8-String-str-x3D-”i”与-String-str-x3D-new-String-“i”-一样吗？"><a href="#8-String-str-x3D-”i”与-String-str-x3D-new-String-“i”-一样吗？" class="headerlink" title="8. String str=”i”与 String str=new String(“i”)一样吗？"></a><strong>8. String str=”i”与 String str=new String(“i”)一样吗？</strong></h4><p>不一样，因为内存的分配方式不一样。String str=”i”的方式，Java 虚拟机会将其分配到<span style="color:red;"> 常量池 </span>中；而 String str=new String(“i”) 则会被分到<span style="color:red;"> 堆内存 </span>中。</p>
 <h4 id="9-如何将字符串反转？"><a href="#9-如何将字符串反转？" class="headerlink" title="9. 如何将字符串反转？"></a><strong>9. 如何将字符串反转？</strong></h4><p>使用 StringBuilder 或者 stringBuffer 的 reverse() 方法。</p>
 <p>示例代码：</p>
 <pre class=" language-java"><code class="language-java">
@@ -643,7 +643,7 @@ System<span class="token punctuation">.</span> out<span class="token punctuation
 <li>抽象类不能直接实例化，普通类可以直接实例化。</li>
 </ul>
 <h4 id="13-抽象类能使用-final-修饰吗？"><a href="#13-抽象类能使用-final-修饰吗？" class="headerlink" title="13. 抽象类能使用 final 修饰吗？"></a><strong>13. 抽象类能使用 final 修饰吗？</strong></h4><p>不能，定义抽象类就是让其他类继承的，如果定义为 final 该类就不能被继承，这样彼此就会产生矛盾，所以 final 不能修饰抽象类，如下图所示，编辑器也会提示错误信息：</p>
-<img src="/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/finalAbstractclassErrorMsg.png" class="">
+<img src="/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/finalAbstractclassErrorMsg.png" class>
 
 
 
@@ -652,6 +652,8 @@ System<span class="token punctuation">.</span> out<span class="token punctuation
 <li>构造函数：<strong>抽象类可以有构造函数</strong>；<strong>接口不能有</strong>（因为接口没有方法体）。</li>
 <li>实现数量：类可以实现很多个接口；但是只能继承一个抽象类。</li>
 <li>访问修饰符：<strong>接口中的方法默认使用 public 修饰</strong>；抽象类中的方法可以是<strong>任意访问修饰符</strong>。</li>
+<li>成员方法：抽象类可以存在普通成员方法，而接口中只能存在 <u><strong>public abstract</strong></u> 方法。</li>
+<li>抽象类只能继承一个，接口普可以实现多个。</li>
 </ul>
 <h4 id="15-Java-中-IO-流分为几种？"><a href="#15-Java-中-IO-流分为几种？" class="headerlink" title="15. Java 中 IO 流分为几种？"></a><strong>15. Java 中 IO 流分为几种？</strong></h4><p>按功能来分：输入流（input）、输出流（output）。</p>
 <p>按类型来分：<strong>字节流</strong>和<strong>字符流</strong>。</p>
@@ -707,7 +709,7 @@ System<span class="token punctuation">.</span> out<span class="token punctuation
 </ul>
 <h4 id="20-List、Set、Map-之间的区别是什么？"><a href="#20-List、Set、Map-之间的区别是什么？" class="headerlink" title="20. List、Set、Map 之间的区别是什么？"></a><strong>20. List、Set、Map 之间的区别是什么？</strong></h4><p>List、Set、Map 的区别主要体现在两个方面：元素是否有序、是否允许元素重复。</p>
 <p>三者之间的区别，如下表：</p>
-<img src="/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/theDiffercenceOfListAndSetAndMap.png" class="">
+<img src="/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/theDiffercenceOfListAndSetAndMap.png" class>
 
 
 
@@ -794,6 +796,91 @@ System<span class="token punctuation">.</span> out<span class="token punctuation
 
 {% asset_img finalAbstractclassErrorMsg.png  %}
 </code></pre>
+<h4 id="35-重载和重写的区别？"><a href="#35-重载和重写的区别？" class="headerlink" title="35. 重载和重写的区别？"></a><strong>35. 重载和重写的区别？</strong></h4><h6 id="1、重载"><a href="#1、重载" class="headerlink" title="1、重载"></a>1、重载</h6><blockquote>
+<p>重载发生在<strong>同一个类中</strong>，<strong>方法名</strong>必须相同，参数类型不同、个数不同、顺序不同，方法返回值和访问修饰符可以不同，报错发生在编译时。</p>
+</blockquote>
+<h6 id="2、重写"><a href="#2、重写" class="headerlink" title="2、重写"></a>2、重写</h6><blockquote>
+<p>重写发生在父子类中，<strong>方法名</strong>、<strong>参数列表</strong>必须相同，返回值范围<strong>小于等于</strong>父类，抛出异常范围<strong>小于等于</strong>父类，访问修饰符访问<strong>大于等于</strong>父类；如果父类方法访问修饰符为<strong>private</strong>，则子类就不能重写该方法。</p>
+</blockquote>
+<h6 id="3、代码示例"><a href="#3、代码示例" class="headerlink" title="3、代码示例"></a>3、代码示例</h6><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span>Striing b<span class="token punctuation">)</span>
+<span class="token keyword">public</span> String <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span>String b<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// 编译报错</span>
+</code></pre>
+<h4 id="36-泛型中extends和super的区别？"><a href="#36-泛型中extends和super的区别？" class="headerlink" title="36. 泛型中extends和super的区别？"></a><strong>36. 泛型中extends和super的区别？</strong></h4><blockquote>
+<p>1.&lt;? extends T &gt; 表示包括 T 在内的所有<strong>子类</strong>。</p>
+<p>2.&lt;? super T&gt; 表示包括 T 在内的所有<strong>父类</strong>。</p>
+</blockquote>
+<h4 id="37-深拷贝和浅拷贝"><a href="#37-深拷贝和浅拷贝" class="headerlink" title="37. 深拷贝和浅拷贝"></a><strong>37. 深拷贝和浅拷贝</strong></h4><blockquote>
+<p>深拷贝和浅拷贝就是值对象的拷贝，一个对象中存在两种属性，一种是基本数据类型，一种是实例对象的引用。</p>
+</blockquote>
+<ol>
+<li>浅拷贝是指，只会拷贝基本数据类型的值，以及实例对象的引用地址，并不会复制一份引用地址所指向的对象，也就是浅拷贝出来的对象，内部的类属性所指向的是用一个对象。</li>
+<li>深拷贝是指，既会拷贝基本数据类型的值，也会针对实例对象的引用地址所指向的对象进行复制，深拷贝出来的对象，内部属性指向的不是同一个对象。</li>
+</ol>
+<h4 id="38-Java中的异常体系是什么样的？"><a href="#38-Java中的异常体系是什么样的？" class="headerlink" title="38. Java中的异常体系是什么样的？"></a><strong>38. Java中的异常体系是什么样的？</strong></h4><blockquote>
+<ul>
+<li>Java中所有的异常都是内置顶级父类<strong>Throwable</strong>。</li>
+<li>Throwable下有两个子类：<strong>Exception</strong>和<strong>Error</strong></li>
+<li>Error是程序无法处理的错误，一旦出现错误，则程序将被迫停止运行。</li>
+<li>Exception不会导致程序停止，又分为两个RunTimeException运行时异常和CheckedException检查异常。</li>
+<li>RunTimeException常常发生在程序运行的过程中，会导致程序当前线程执行失败。CheckedException常常发生在程序编译过程中，会导致程序编译不通过。</li>
+</ul>
+</blockquote>
+<h6 id="Java异常体系图"><a href="#Java异常体系图" class="headerlink" title="Java异常体系图"></a>Java异常体系图</h6><img src="/jojoblog.github.io/2023/02/12/java-mian-shi-ti-208-dao/Java%E5%BC%82%E5%B8%B8%E4%BD%93%E7%B3%BB%E5%9B%BE.png" class>
+
+
+
+
+
+<h4 id="39-Java中有哪些类加载器？"><a href="#39-Java中有哪些类加载器？" class="headerlink" title="39. Java中有哪些类加载器？"></a><strong>39. Java中有哪些类加载器？</strong></h4><p>JDK自带三个类加载器： <span style="color:blue;">**BootstrapClassLoader、ExtClassLoader、AppClassLoader **</span>。</p>
+<blockquote>
+<ul>
+<li>BootstrapClassLoader是ExtClassLoader的父类加载器，默认负责加在 <strong>%JAVA_HOME%/lib</strong>下的jar包和class文件。</li>
+<li>ExtClassLoader是AppClassLoader 的父类加载器，负责加载**%JAVA_HOME%/lib/ext**文件夹下的jar包和class文件。</li>
+<li>AppClassLoader 是自定义类加载器的父类，负责加载<strong>classpath</strong>下的类文件。</li>
+</ul>
+</blockquote>
+<h4 id="40-说说类加载器双亲委派模型？"><a href="#40-说说类加载器双亲委派模型？" class="headerlink" title="40. 说说类加载器双亲委派模型？"></a><strong>40. 说说类加载器双亲委派模型？</strong></h4><p>JVM中存在三个默认类加载器：</p>
+<ol>
+<li>BootstrapClassLoader</li>
+<li>ExtClassLoader</li>
+<li>AppClassLoader</li>
+</ol>
+<p>AppClassLoader 的父类加载器是ExtClassLoader，ExtClassLoader的父类加载器是BootstrapClassLoader。</p>
+<blockquote>
+<p>JVM在加载一个类时，会调用AppClassLoader 的loadClass方法来加载这个类。不过在这个方法中，会先调用ExtClassLoader的loadClass方法来加载类。同样，在ExtClassLoader的loadClass方法中会先使用BootstrapClassLoader来加载类。如果BootstrapClassLoader加载到了就直接成功，如果BootstrapClassLoader没有加载到，那么ExtClassLoader就会尝试自己加载该类，如果没有加载到，那么则会由AppClassLoader 来加载这个类。</p>
+<p>所以，双亲委派指的是，JVM在加载类时，会委派给ExtClassLoader，ExtClassLoader进行加载，如果没有加载到才由自己进行加载。</p>
+</blockquote>
+<h4 id="41-Java中的数据结构有哪些？"><a href="#41-Java中的数据结构有哪些？" class="headerlink" title="41.Java中的数据结构有哪些？"></a><strong>41.Java中的数据结构有哪些？</strong></h4><ol>
+<li>线性表（ArrayList）</li>
+<li>链表（LinkedList)</li>
+<li>栈（Stack）</li>
+<li>队列（Queue）</li>
+<li>图（Map）</li>
+<li>树（Tree）</li>
+</ol>
+<h4 id="42-什么是OOP？"><a href="#42-什么是OOP？" class="headerlink" title="42. 什么是OOP？"></a><strong>42. 什么是OOP？</strong></h4><p>面向对象编程</p>
+<h4 id="43-面向对象和面向过程的区别？"><a href="#43-面向对象和面向过程的区别？" class="headerlink" title="43. 面向对象和面向过程的区别？"></a><strong>43. 面向对象和面向过程的区别？</strong></h4><ol>
+<li><p>面向过程：</p>
+<p>一种较早的编程思想，顾名思义就是该思想是站在过程的角度考虑问题，强调的就是功能行为，功能的执行过程，即先后顺序，而每一个功能我们都使用函数（C语言中的称呼）把这些步骤一步步实现，依次调用函数就可以了。</p>
+</li>
+<li><p>面向对象：</p>
+<p>一种基于面向过程的新编程思想，顾名思义就是该思想站在对象角度思考问题，我们把多个功能合理地放到不同对象里，强调的是具备某些功能的对象。</p>
+<p>具备某些功能的实体，称为对象。面向对象最小的程序单元是：类。面向对象更加符合常规思维方式，稳定性好，可重用性强，易于开发大型软件产品，有良好的可维护性。</p>
+<p>在软件工程上，面向对象可以使工程更加模块化，实现更低的耦合和更高的内聚。</p>
+</li>
+</ol>
+<h4 id="44-什么是隐式转换，什么是显示转换？"><a href="#44-什么是隐式转换，什么是显示转换？" class="headerlink" title="44. 什么是隐式转换，什么是显示转换？"></a><strong>44. 什么是隐式转换，什么是显示转换？</strong></h4><blockquote>
+<p>显示转换就是类型强转，把一个大类型的数据强制赋值给小类型的数据；</p>
+<p>隐式转换就是大范围的变量能够接受小范围的数据；</p>
+<p>隐式转换和显示转换其实就是自动类型转换和强制类型转换。</p>
+</blockquote>
+<h4 id="45-char类型能不能转成int类型？能不能转成String类型？能不能转成double类型？"><a href="#45-char类型能不能转成int类型？能不能转成String类型？能不能转成double类型？" class="headerlink" title="45. char类型能不能转成int类型？能不能转成String类型？能不能转成double类型？"></a><strong>45. char类型能不能转成int类型？能不能转成String类型？能不能转成double类型？</strong></h4><p>char在Java中是比较特殊的类型，它的int值是从1开始，一共有2的16次方个数据。</p>
+<p>char&lt;int&lt;long&lt;float&lt;double，char类型可以隐式转成int，double类型，但是不能隐式转换成String；如果char类型要转成byte，short类型时，需要强转。</p>
+<p><span style="color:red;"><strong>异常</strong></span></p>
+<p><span style="color:red;"> 异常&nbsp;</span></p>
+<p><span style="color:blue;">**异常&nbsp;**</span></p>
+<p><span style="color:blue;">  异常&nbsp;</span></p>
 
                 
             </div>
