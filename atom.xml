@@ -6,7 +6,7 @@
   <link href="https://honglangdi.github.io/jojoblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://honglangdi.github.io/jojoblog.github.io/"/>
-  <updated>2023-07-11T15:01:35.667Z</updated>
+  <updated>2023-07-11T15:15:42.441Z</updated>
   <id>https://honglangdi.github.io/jojoblog.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Tomcat服务器配置</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2023/07/11/tomcat-fu-wu-qi-pei-zhi/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2023/07/11/tomcat-fu-wu-qi-pei-zhi/</id>
+    <published>2023-07-11T15:14:21.000Z</published>
+    <updated>2023-07-11T15:15:42.441Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Tomcat-配置&quot;&gt;&lt;a href=&quot;#Tomcat-配置&quot; class=&quot;headerlink&quot; title=&quot;Tomcat 配置&quot;&gt;&lt;/a&gt;Tomcat 配置&lt;/h1&gt;&lt;h2 id=&quot;一、环境变量配置&quot;&gt;&lt;a href=&quot;#一、环境变量配置&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Tomcat" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Tomcat/"/>
+    
+    
+    <category term="Tomcat" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Tomcat/"/>
+    
+  </entry>
   
   <entry>
     <title>前端开发规范手册</title>

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Tomcat服务器配置</title>
+      <link href="/jojoblog.github.io/2023/07/11/tomcat-fu-wu-qi-pei-zhi/"/>
+      <url>/jojoblog.github.io/2023/07/11/tomcat-fu-wu-qi-pei-zhi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Tomcat-配置"><a href="#Tomcat-配置" class="headerlink" title="Tomcat 配置"></a>Tomcat 配置</h1><h2 id="一、环境变量配置"><a href="#一、环境变量配置" class="headerlink" title="一、环境变量配置"></a>一、环境变量配置</h2><p>1)、新建系统变量，变量名为<code>CATALINA_HOME</code><br>变量值为<code>解压Tomcat文件夹的路径</code>，</p><p>2)、找到系统变量Path，双击空白处或新建即可在末尾加上<code>%CATALINA_HOME%\bin</code></p><p><strong><span style="color:red;">注意：</span></strong></p><p><span style="color:red;">要运行Tomcat需要配置Java环境变量</span></p><h2 id="二、启动Tomcat"><a href="#二、启动Tomcat" class="headerlink" title="二、启动Tomcat"></a>二、启动Tomcat</h2><p>1、进入Windows命令行窗口（win+R，输入cmd，回车）<br>输入<code>startup.bat</code>回车</p><p>2、在浏览器访问 localhost:8080</p><h2 id="三、修改Tomcat配置"><a href="#三、修改Tomcat配置" class="headerlink" title="三、修改Tomcat配置"></a>三、修改Tomcat配置</h2><h3 id="1、启动乱码问题"><a href="#1、启动乱码问题" class="headerlink" title="1、启动乱码问题"></a>1、启动乱码问题</h3><p>输入<code>startup.bat</code>回车后启动界面日志输出乱码问题</p><ol><li>打开<a href="https://so.csdn.net/so/search?q=apache&amp;spm=1001.2101.3001.7020">apache</a>-tomcat-9.0.45-&gt;conf-&gt;logging.properties</li><li>用记事本打开<code>logging.properties</code>找到 java.util.logging.ConsoleHandler.encoding</li><li>把 java.util.logging.ConsoleHandler.encoding 的编码格斯修改成 GBK</li></ol><h3 id="2、端口占用问题"><a href="#2、端口占用问题" class="headerlink" title="2、端口占用问题"></a>2、端口占用问题</h3><p>Tomcat默认8080端口被占用</p><ol><li>打开apache-tomcat-9.0.45-&gt;conf-&gt;server.xml</li><li>找到 &lt;Connector port=”8080”</li><li>修改成 &lt;Connector port=”8080”</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tomcat </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tomcat </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端开发规范手册</title>
       <link href="/jojoblog.github.io/2023/07/11/qian-duan-kai-fa-gui-fan-shou-ce/"/>
       <url>/jojoblog.github.io/2023/07/11/qian-duan-kai-fa-gui-fan-shou-ce/</url>
