@@ -6,7 +6,7 @@
   <link href="https://honglangdi.github.io/jojoblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://honglangdi.github.io/jojoblog.github.io/"/>
-  <updated>2023-04-02T15:04:39.970Z</updated>
+  <updated>2023-07-11T15:01:35.667Z</updated>
   <id>https://honglangdi.github.io/jojoblog.github.io/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端开发规范手册</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2023/07/11/qian-duan-kai-fa-gui-fan-shou-ce/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2023/07/11/qian-duan-kai-fa-gui-fan-shou-ce/</id>
+    <published>2023-07-11T14:59:26.000Z</published>
+    <updated>2023-07-11T15:01:35.667Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前端开发规范手册&quot;&gt;&lt;a href=&quot;#前端开发规范手册&quot; class=&quot;headerlink&quot; title=&quot;前端开发规范手册&quot;&gt;&lt;/a&gt;前端开发规范手册&lt;/h1&gt;&lt;h2 id=&quot;命名规则&quot;&gt;&lt;a href=&quot;#命名规则&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Web" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Web/"/>
+    
+    <category term="前端" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Web/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="HTML5" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Web/%E5%89%8D%E7%AB%AF/HTML5/"/>
+    
+    <category term="CSS" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Web/%E5%89%8D%E7%AB%AF/HTML5/CSS/"/>
+    
+    <category term="JavaScript" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Web/%E5%89%8D%E7%AB%AF/HTML5/CSS/JavaScript/"/>
+    
+    <category term="SCSS" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/Web/%E5%89%8D%E7%AB%AF/HTML5/CSS/JavaScript/SCSS/"/>
+    
+    
+    <category term="Web" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/Web/"/>
+    
+    <category term="前端" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="HTML5" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/HTML5/"/>
+    
+    <category term="CSS" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/CSS/"/>
+    
+    <category term="JavaScript" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/JavaScript/"/>
+    
+    <category term="SCSS" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/SCSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue2使用vxe-table的教程</title>
