@@ -6,7 +6,7 @@
   <link href="https://honglangdi.github.io/jojoblog.github.io/atom.xml" rel="self"/>
   
   <link href="https://honglangdi.github.io/jojoblog.github.io/"/>
-  <updated>2023-07-11T15:15:42.441Z</updated>
+  <updated>2023-07-11T15:27:37.108Z</updated>
   <id>https://honglangdi.github.io/jojoblog.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA自定义注释模板</title>
+    <link href="https://honglangdi.github.io/jojoblog.github.io/2023/07/11/idea-zi-ding-yi-zhu-shi-mo-ban/"/>
+    <id>https://honglangdi.github.io/jojoblog.github.io/2023/07/11/idea-zi-ding-yi-zhu-shi-mo-ban/</id>
+    <published>2023-07-11T15:21:59.000Z</published>
+    <updated>2023-07-11T15:27:37.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;IDEA自定义注释模板&quot;&gt;&lt;a href=&quot;#IDEA自定义注释模板&quot; class=&quot;headerlink&quot; title=&quot;IDEA自定义注释模板&quot;&gt;&lt;/a&gt;IDEA自定义注释模板&lt;/h1&gt;&lt;h2 id=&quot;一、创建类注释的模板&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="IDEA" scheme="https://honglangdi.github.io/jojoblog.github.io/categories/IDEA/"/>
+    
+    
+    <category term="IDEA" scheme="https://honglangdi.github.io/jojoblog.github.io/tags/IDEA/"/>
+    
+  </entry>
   
   <entry>
     <title>Tomcat服务器配置</title>
